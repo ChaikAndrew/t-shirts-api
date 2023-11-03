@@ -1,0 +1,58 @@
+{
+  "name": "t-shirts-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app,js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production&& node ./api/index.js",
+    "start:dev": "cross-env NODE_ENV=development&& nodemon ./api/index.js",
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint --fix **/*.js",
+    "vercel-build": "echo hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaikAndrew/t-shirts-api.git"
+  },
+  "keywords": [
+    "english",
+    "words",
+    "learning"
+  ],
+  "author": "Dmytro Vasylenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaikAndrew/t-shirts-api.git"
+  },
+  "homepage": "https://github.com/ChaikAndrew/t-shirts-api#readme",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "bcrypt": "^5.1.1",
+    "config": "^3.3.9",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "4.18.2",
+    "gravatar": "^1.8.2",
+    "helmet": "^7.0.0",
+    "jimp": "^0.22.10",
+    "joi": "^17.10.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.3",
+    "morgan": "1.10.0",
+    "multer": "^1.4.2",
+    "playht": "^0.9.0-beta.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "3.0.1"
+  }
+}
